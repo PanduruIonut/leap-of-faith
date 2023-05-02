@@ -34,7 +34,7 @@ const onScroll = () => {
     }
 };
 
-window.addEventListener('scroll', onScroll);
+window.addEventListener('scroll', onScroll, { passive: true });
 
 const preloadImages = () => {
     for (let i = 1; i < frameCount; i++) {
